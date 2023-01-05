@@ -1,24 +1,12 @@
-let numFirst = +prompt ("enter number");
-let numSecond = +prompt ("enter number");
-let operator = prompt("enter operator"); // any: +, -, *, /, %
-function calcResult(numFirst, numSecond, operator){
-    switch (operator) {
-        case '+':
-          return numFirst + numSecond;
-        case '-':
-          return numFirst - numSecond;
-        case '*':
-          return numFirst * numSecond;
-        case '/':
-          return numFirst / numSecond;
-        case '<':
-          return numFirst < numSecond;
-        case '>':
-          return numFirst > numSecond;
-      }
-}
-alert(calcResult(numFirst, numSecond, operator));
-
-console.log(numFirst);
-console.log(numSecond);
-console.log(calcResult);
+const numFirst = +prompt ("enter number");
+const operator = prompt("enter operator"); // any: +, -, *, /, %
+const numSecond = +prompt ("enter number");
+alert ("user entered" + (numFirst + operator + numSecond))
+let addition = numFirst + numSecond;
+let subtraction = numFirst - numSecond;
+let multiplication = numFirst * numSecond;
+let division = numFirst / numSecond;
+console.log(addition);
+console.log(subtraction);
+console.log(multiplication);
+console.log(division);
